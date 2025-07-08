@@ -8,6 +8,8 @@ It uses Django Rest Framework and React.
 
 ## Modifications
 
+- Added TypeScript
+
 - Annotated Python functions
 
 - Database is PostgreSQL instead of SQLite
@@ -17,5 +19,7 @@ It uses Django Rest Framework and React.
 - Added model Meta classes
 
 - Using `python-dotenv` for settings
+
+- Using Bootstrap NPM package instead of CDN
 
 - Other minor modifications

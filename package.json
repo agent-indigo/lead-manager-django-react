@@ -1,0 +1,30 @@
+{
+  "name": "lead-manager-django-react",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development --watch ./frontend/src/index.js --output ./frontend/static/frontend/app.js",
+    "build": "webpack --mode production --watch ./frontend/src/index.js --output ./frontend/static/frontend/app.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "bootswatch": "^5.3.7",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
+    "react-router-bootstrap": "^0.26.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@types/react-dom": "^19.1.6",
+    "@types/react-router-bootstrap": "^0.26.8",
+    "babel-loader": "^10.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "prettier": "^3.6.2",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}

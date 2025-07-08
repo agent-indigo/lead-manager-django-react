@@ -18,6 +18,10 @@ from django.urls import path, include
 urlpatterns = [
   path(
     '',
-    include('leads.urls')
+    include('frontend.urls')
   ),
+  path(
+    '',
+    include('leads.urls')
+  )
 ]

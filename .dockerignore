@@ -2,7 +2,7 @@
 .venv/
 .vscode/
 __pycache__/
-build/
+node_modules/
 .dockerignore
 .env.example
 .gitignore

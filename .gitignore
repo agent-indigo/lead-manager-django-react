@@ -1,5 +1,6 @@
 .venv/
 .vscode/
 __pycache__/
-build/
+frontend/static/
+node_modules/
 .env
