@@ -20,11 +20,15 @@ class Lead(models.Model):
   message = models.TextField(
     blank = True
   )
+  owner = models.ForeignKey(
+    'auth.User',
+    on_delete = models.CASCADE,
+    related_name = 'leads',
+    null = True
+  )
   created_at = models.DateTimeField(
     auto_now_add = True
   )
   updated_at = models.DateTimeField(
     auto_now = True
   )
-  def __str__(self: object) -> str:
-    return f'{self.first_name} {self.last_name}'

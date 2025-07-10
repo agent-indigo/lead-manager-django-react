@@ -34,6 +34,7 @@ ALLOWED_HOSTS = os.getenv(
 ).split(',')
 # Application definition
 INSTALLED_APPS = [
+  'accounts.apps.AccountsConfig',
   'django.contrib.admin',
   'django.contrib.auth',
   'django.contrib.contenttypes',
@@ -41,9 +42,15 @@ INSTALLED_APPS = [
   'django.contrib.sessions',
   'django.contrib.staticfiles',
   'frontend.apps.FrontendConfig',
+  'knox',
   'leads.apps.LeadsConfig',
   'rest_framework'
 ]
+REST_FRAMEWORK = {
+  'DEFAULT_AUTHENTICATION_CLASSES': (
+    'knox.auth.TokenAuthentication',
+  )
+}
 MIDDLEWARE = [
   'django.contrib.sessions.middleware.SessionMiddleware',
   'django.contrib.auth.middleware.AuthenticationMiddleware',

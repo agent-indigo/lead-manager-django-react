@@ -40,6 +40,14 @@ class Migration(migrations.Migration):
           blank = True
         )
       ), (
+        'owner',
+        models.ForeignKey(
+          null = True,
+          on_delete = models.CASCADE,
+          related_name = 'leads',
+          to = 'auth.User'
+        )
+      ), (
         'created_at',
         models.DateTimeField(
           auto_now_add = True
